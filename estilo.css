@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ffffff;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px 0 40px;
+    background: pink;
+}
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+.icono {
+    font-size: 1.4em;
+    margin-left: 18px;
+}
+.contenedor {
+    max-width: 1100px;
+    margin: 32px auto 0 auto;
+}
+.anuncio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    background: pink;
+    border-radius: 10px;
+}
+.imagen {
+    max-width: 340px;
+    border-radius: 8px;
+}
+.textoanuncio {
+    max-width: 450px;
+}
+.textoanuncio h2 {
+    font-size: 2.7em;
+    margin-bottom: 8px;
+}
+.textoanuncio p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+h3 {
+    margin: 38px 0 23px 6px;
+}
+.destacado {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+.productos,
+.productosDestacado {
+    background: #d1cccc;
+    border-radius: 8px;
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px #ececec;
+}
+.producosDestacado {
+    grid-row: span 2;
+}
+.producosDestacado img {
+    max-width: 230px;
+}
+.productos img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+.nombre {
+    margin-top: 12px;
+    font-weight: 600;
+}
+.precio {
+    margin-top: 5px;
+    color: #333;
+}
+.comprarboton {
+    margin-top: 12px;
+    background: #0055ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 18px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.comprarboton:hover {
+    background: #1041a4;
+}
+footer {
+    margin-top: 38px;
+    padding: 24px 40px;
+    background: #fff;
+    text-align: left;
+}
+footer a {
+    color: #222;
+    margin-right: 25px;
+    text-decoration: none;
+}
+@media (max-width: 900px) {
+    .destacado {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor {
+        max-width: 90vw;
+    }
+    .textoanuncio {
+        flex-direction: column;
+    }
+    .imagen {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .featured {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
