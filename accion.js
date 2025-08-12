@@ -1,5 +1,3 @@
-// Funcionalidad básica para botones "Agregar al carrito" y "Shop Now"
-
 document.addEventListener('DOMContentLoaded', function() {
     const cartBtns = document.querySelectorAll('.icono');
     cartBtns.forEach(btn => {
@@ -8,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const shopNowBtn = document.getElementById('shopNowBtn');
-    if(comprarboton) {
-        shopNowBtn.addEventListener('click', () => {
+    const comprarboton = document.getElementById('comprarboton');
+    if (comprarboton) {
+        comprarboton.addEventListener('click', () => {
             document.querySelector('.destacado').scrollIntoView({ behavior: 'smooth' });
         });
     }

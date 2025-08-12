@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #ffffff;
+    background: #F8F5F0;
 }
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 40px 0 40px;
-    background: pink;
+    background: #E6D3B3;
 }
 .logo {
     font-size: 1.5em;
@@ -33,11 +33,11 @@ nav a {
     justify-content: space-between;
     align-items: center;
     padding: 32px;
-    background: pink;
+    background: #D1C7B7;
     border-radius: 10px;
 }
 .imagen {
-    max-width: 340px;
+    max-width: 300px;
     border-radius: 8px;
 }
 .textoanuncio {
@@ -91,7 +91,7 @@ h3 {
 }
 .comprarboton {
     margin-top: 12px;
-    background: #0055ff;
+    background: #C8A165;
     color: #fff;
     border: none;
     border-radius: 5px;
